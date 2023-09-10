@@ -4,7 +4,8 @@
         <title>
             Create New Account - Food 'n Drive
         </title>
-        <script src = 'script.js'></script>
+        <script src = 'script.js?$$REVISION$$'></script>
+        <script src = 'dataStore.js?$$REVISION$$'></script>
     </Head>
     <body>
         <div style = "position:relative; left:3px; top:-3px;">
@@ -24,7 +25,12 @@
             <!--password label--> 
             <label for="pass"><b>YOUR PASSWORD:</b></label>
             <!--password textbox--> 
-            <input type="password" id ='password_create' placeholder="Enter Password" name="pass" required>
+            <input id ='password_create' placeholder="Enter Password" name="pass" required>
+            <p><br></p>
+            <!--address label--> 
+            <label for="pass"><b>YOUR ADDRESS</ADdress>:</b></label>
+            <!--address textbox--> 
+            <input type="password" id ='address_create' placeholder="Enter Address" name="pass" required>
             <p><br></p>
             <!--the button for logging in--> 
             <button onclick="createAccount()">CREATE ACCOUNT</button>

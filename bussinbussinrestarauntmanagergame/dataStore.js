@@ -1,13 +1,7 @@
-function initStore() {
-    store = new DataStore(
-        [
-            new Restaurant("Subway", "footlong", "1 Microsoft Way, Redmond WA 98052"),
-        ],
-    );    
-}
+
 
 class DataStore {
-    #restaurants = [];
+    restaurants = [];
 
     constructor(restaurants) {
         this.restaurants = restaurants;
@@ -25,6 +19,10 @@ class DataStore {
         }
 
         return null;
+    }
+    addResturant(restaurant){
+        
+        this.restaurants.push(restaurant);
     }
 }
 
@@ -44,5 +42,9 @@ class Restaurant
         return this.password == password;
     }
 }
-
-initStore();
+store = new DataStore(
+    [
+        new Restaurant("Subway", "footlong", "1 Microsoft Way, Redmond WA 98052"),
+    ]
+);
+  
