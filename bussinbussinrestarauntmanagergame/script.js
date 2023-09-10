@@ -15,7 +15,7 @@ function login_clicked(){
         document.getElementById('output').innerHTML = 'WRONG PASSWORD';
         return;
     }
-    document.getElementById('output').innerHTML = 'yoo it works';
+    document.getElementById('output').innerHTML = 'SUCCESS';
     
     //DO NOT DELETE IMPORTANT DO NOT DELETE
     //var x = document.getElementsByClassName('loginthing');
