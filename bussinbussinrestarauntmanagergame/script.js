@@ -36,3 +36,9 @@ function createAccount(){
     store.addResturant(new Restaurant(addedUsername,addedPassword,address))
     console.log(store.getRestaurants());
 }
+
+function whenPredictClicked(){
+    document.getElementById('foodUsed').innerHTML = ""
+    document.getElementById('foodWasted').innerHTML = ""
+    document.getElementById('totalOrders').innerHTML = ""
+}

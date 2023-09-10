@@ -3,6 +3,8 @@
 <head>
     <title>Order Prediction</title>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="script.js"></script>
+    <script src="mlAlgo.js"></script>
 </head>
 <div align="center">
     <a href="index.html"><img src="burger.png" alt="Tutorialspoint" style="width:70px;height:80px;"></a>
@@ -21,11 +23,10 @@
     Total Food Used (in pounds): <input type="number" id="foodUsed"><br><br>
     Total Orders: <input type="number" id="totalOrders"><br><br>
     Food Wasted (in pounds): <input type="number" id="foodWasted"><br><br>
-    <input type="button" value="Predict Next Weeks's Orders">
+    <input type="button" value="Predict Next Weeks's Orders" onclick="getData()">
 </form>
 
-<h3 align="center" style="font-size: 30px;">Prediction:</h3>
-<p id="predictionOutput"></p>
+<h3 align="center" style="font-size: 30px;" onclick="whenPredictClicked()">Prediction:</h3><p id="predictionOutput"></p>
 
 <script src="script.js"></script>
 <script type="module" src="mlAlgo.js"></script>
