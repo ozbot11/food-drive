@@ -1,3 +1,4 @@
+
 restaurant = 0
 console.log(store.getRestaurants());
 // this function is called when the 'log in' button is clicked
@@ -6,7 +7,7 @@ function login_clicked(){
     var password = document.getElementById('password').value;
     var username = document.getElementById('username').value;
     restaurant = store.findRestaurant(username);
-    print(store.getRestaurants());
+    console.log(store.getRestaurants());
     if (restaurant == null) {
         document.getElementById('output').innerHTML = 'RESTAURANT NOT FOUND';
         return;
