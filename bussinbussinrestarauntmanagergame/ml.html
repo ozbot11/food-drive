@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Prediction</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+</head>
+<body>
+
+<h2>Enter Your Restaurant's Historical Data</h2>
+
+<form id="predictionForm">
+    Total Food Used (in pounds): <input type="number" id="foodUsed"><br><br>
+    Total Orders: <input type="number" id="totalOrders"><br><br>
+    Food Wasted (in pounds): <input type="number" id="foodWasted"><br><br>
+    <input type="button" value="Predict Next Month's Orders">
+</form>
+
+<h3>Prediction:</h3>
+<p id="predictionOutput"></p>
+
+<script src="script.js"></script>
+<script type="module" src="mlAlgo.js"></script>
+</body>
+</html>
