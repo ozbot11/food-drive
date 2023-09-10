@@ -4,21 +4,42 @@
     <title>Order Prediction</title>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
 </head>
+<div align="center">
+    <a href="index.html"><img src="burger.png" alt="Tutorialspoint" style="width:70px;height:80px;"></a>
+</div>
+<style>
+    body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            overflow: hidden;
+        }
+</style>
 <body>
 
-<h2>Enter Your Restaurant's Historical Data</h2>
+<h2 align="center" style="font-size: 50px;">Enter Your Restaurant's Historical Data</h2>
 
-<form id="predictionForm">
+<form id="predictionForm" align="center" style="font-size: 30px;">
     Total Food Used (in pounds): <input type="number" id="foodUsed"><br><br>
     Total Orders: <input type="number" id="totalOrders"><br><br>
     Food Wasted (in pounds): <input type="number" id="foodWasted"><br><br>
     <input type="button" value="Predict Next Month's Orders">
 </form>
 
-<h3>Prediction:</h3>
+<h3 align="center" style="font-size: 30px;">Prediction:</h3>
 <p id="predictionOutput"></p>
 
 <script src="script.js"></script>
 <script type="module" src="mlAlgo.js"></script>
 </body>
+
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 10%;
+        background-image: url('Untitled_design_2.png');
+        background-repeat: no-repeat;
+        background-size: 100% 1000%;
+    }
+</style>
+
 </html>
